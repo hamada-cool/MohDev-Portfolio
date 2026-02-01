@@ -95,5 +95,32 @@ html, body
     margin-top: 80px;
     padding-top: 80px;
 }
+[dir="rtl"] {
+  text-align: right;
+}
+[dir="ltr"] {
+  text-align: left;
+}
+[dir="rtl"] .navbar-nav 
+{
+  text-align: right;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-right: 0;
+  padding-left: 0;
+}
+[dir="rtl"]
+.hero
+{
+     text-align: right;
+     margin-left: 0 !important;
+     display: flex;
+}
+.lang-sweitch button
+{
+    padding: 2px 8px;
+    font-size: 12px;
+}  
+
 
 
