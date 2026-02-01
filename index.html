@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,53 +14,49 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar fixed-top">
         <div class="container-fluid">
-        <div class="brand">
+        <div class="brand-lang d-flex align-items-center">
             <a class="navbar-brand" href="#"><img src="image/mohdev.png" alt="" class="logo"></a>
+            <div class="lang-switch">
+            <button class="btn btn-sm btn-light" onclick="setLanguage('ar')">AR</button>
+            <button class="btn btn-sm btn-light" onclick="setLanguage('en')">EN</button>
+        </div>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact me</a>
-            </li>
-        </ul>
+           <ul class="navbar-nav ms-auto" id="navLinks">
+                <li class="nav-item"><a class="nav-link active" href="#" id="navProjects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="navSkills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="navAbout">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="contactBtn">Contact me</a></li>
+            </ul>
         </div>
         </div>
     </nav>
     <section class="hero"> 
         <div class="hero-title">
             <div class="hero-sub">
-                <h1> Hello, Iam <span> Mohamed </span></h1>
-                <h4 class="hero-dev">Front-Ends Developer</h4>
-                <p class="hero-p">
+                <h1 id="heroTitle"> Hello, Iam <span> Mohamed </span></h1>
+                <h4 class="hero-dev"  id="heroDev">Front-Ends Developer</h4>
+                <p class="hero-p" id="heroDesc">
                     Iam an a beginner in Front-End Developing websites by using HTML, CSS, JavaScript 
                 </p>
-                <a href="#" class="btn btn-primary">more..</a>
+                <a href="#" class="btn btn-primary"  id="moreBtn">more..</a>
             </div>
         </div>
     </section>
     <section class="skills">
-        <h2 class="slil">Skills : </h2>
+        <h2 class="slil" id="skillsTitle">Skills : </h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
             <div class="card h-100">
                 <img src="image/html.png" class="card-img-top skill-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">HTML</h5>
-                <p>Beginner web developer with basic knowledge of HTML, looking to improve skills.</p>
+                <p id="htmlDesc">Beginner web developer with basic knowledge of HTML, looking to improve skills.</p>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Check out</a>
+                <a href="#" class="btn btn-primary" id="checkBtn1">Check out</a>
             </div>
             </div>
             </div>
@@ -69,9 +65,9 @@
                 <img src="image/css2.png" class="card-img-top skill-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">CSS</h5>
-                <p>Beginner web developer with basic knowledge of CSS, looking to improve skills.</p>
+                <p id="cssDesc">Beginner web developer with basic knowledge of CSS, looking to improve skills.</p>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Check out</a>
+                <a href="#" class="btn btn-primary" id="checkBtn2">Check out</a>
             </div>
             </div>
             </div>
@@ -80,9 +76,9 @@
                 <img src="image/JS.png" class="card-img-top skill-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">JavaScript</h5>
-                <p>Beginner web developer with basic knowledge of JavaScript, looking to improve skills.</p>
+                <p id="jsDesc">Beginner web developer with basic knowledge of JavaScript, looking to improve skills.</p>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Check out</a>
+                <a href="#" class="btn btn-primary" id="checkBtn3">Check out</a>
             </div>
             </div>
             </div>
@@ -105,9 +101,12 @@
       </div>
     </footer>
     <script src="bootstrap.bundle.js"></script>
+    <script src="lang.js"></script>
+    <script src="sript.js"></script>
 </body>
 
 </html>
+
 
 
 
