@@ -52,84 +52,53 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar fixed-top">
-        <div class="container-fluid">
-        <div class="brand">
-            <a class="navbar-brand" href="#"><img src="image/mohdev.png" alt="" class="logo"></a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About me</a>
-            </li>
-        </ul>
-        </div>
+   <nav class="navbar navbar-expand-lg navbar-dark  bg-dark custom-navbar fixed-top">
+        <div class="container-fluid" dir="ltr">
+        <a class="navbar-brand py-3" href="index.html">Back</a>
         </div>
     </nav>
+    <div class="container text-white m" style="text-align: left; margin-top: 100px;">
+        <h4 class="fw-bold">Contact Message Form</h4>
+        <p class="text-white mb-0">Here you can send a message to me , fill the form and send the message</p>
+    </div>
     <div class="container mt-5">
-    <div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card shadow p-4">
-        <h3 class="text-center mb-4">Contact Me</h3>
-        <form>
-          <!-- Name -->
-          <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name" required>
-          </div>
-
-          <!-- Email -->
-          <div class="mb-3">
-            <label class="form-label">Email address</label>
-            <input type="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-
-          <!-- Subject -->
-          <div class="mb-3">
-            <label class="form-label">Subject</label>
-            <input type="text" class="form-control" placeholder="Subject">
-          </div>
-
-          <!-- Message -->
-          <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control" rows="4" placeholder="Write your message..." required></textarea>
-          </div>
-
-          <!-- Button -->
-          <button type="submit" class="btn btn-primary w-100">Send Message</button>
-        </form>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow p-4" >
+                <h3 class="text-center mb-3">Contact Me</h3>
+                <form action="#">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>  
+                </form>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    </div>
-    <footer class="mt-5 text-white text-center">
+    <footer class="mt-5 pt-5 text-white text-center">
         <div class="container-fluid">
-        <ul class="navbar-nav flex-row justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link mx-3" href="#"><i class="bi bi-instagram"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  mx-3" href="#"><i class="bi bi-facebook"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  mx-3" href="#"><i class="bi bi-twitter-x"></i></a>
-        </li>
-        </ul>
-      </div>
+            <ul class="list-unstyled d-flex justify-content-center gap-3 mb-2">
+                <li class=""><a class="mx-3 text-white" href=""><i class="bi bi-instagram"></i></a></li>
+                <li class=""><a class="mx-3 text-white" href=""><i class="bi bi-facebook"></i></a></li>
+                <li class=""><a class="mx-3 text-white" href=""><i class="bi bi-envelope"></i></a></li>
+            </ul>
+            <p class="mb-2">All rights reserved  &#169; 2026 </p>
+        </div>
     </footer>
     <script src="bootstrap.bundle.js"></script>
 </body>
 
 </html>
+
 
 
